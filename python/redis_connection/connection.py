@@ -14,7 +14,7 @@ class RedisConnection:
                 self.client = redis.Redis(
                     host=os.getenv('HOST', "localhost"),
                     port=os.getenv('PORT', 6379),
-                    ssl=True,
+                    #ssl=True,
                     ssl_cert_reqs=None,
                     decode_responses=False)
             else:
